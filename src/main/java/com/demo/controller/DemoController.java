@@ -24,12 +24,12 @@ public class DemoController {
 	public String printHello() {
 		return "Hello";
 	}
-//	
-//	@GetMapping("/{name}/{age}")
-//	public void details(@PathVariable("name") String name, @PathVariable("age") int age) {
-////		return " name " + " , " + "age";
-//		System.out.println(name);
-//		System.out.println(age);
-//	}
+	
+	@GetMapping("/{name}/{age}")
+	public void details(@PathVariable("name") String name, @PathVariable("age") int age) {
+//		return " name " + " , " + "age";
+		System.out.println(name);
+		System.out.println(age);
+	}
 
 }
